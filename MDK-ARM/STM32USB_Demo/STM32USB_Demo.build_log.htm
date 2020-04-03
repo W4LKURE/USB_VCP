@@ -22,21 +22,19 @@ Dialog DLL:      TCM.DLL V1.36.2.0
  
 <h2>Project:</h2>
 D:\STM32_Demo\STM32USB_Demo\MDK-ARM\STM32USB_Demo.uvprojx
-Project File Date:  04/02/2020
+Project File Date:  04/03/2020
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'e:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'STM32USB_Demo'
-compiling main.c...
-../Src/main.c(101): warning:  #223-D: function "VCP_Read" declared implicitly
-  	if(VCP_Read(&byte,1)!=1)
-../Src/main.c(103): warning:  #223-D: function "VCP_Write" declared implicitly
-  	VCP_Write("\r\nYOU TYPED:",12);
-../Src/main.c: 2 warnings, 0 errors
+compiling usbd_cdc.c...
+../Inc/mem_alloc.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c: 1 warning, 0 errors
 linking...
-Program Size: Code=12128 RO-data=440 RW-data=400 ZI-data=10728  
+Program Size: Code=12212 RO-data=440 RW-data=392 ZI-data=7400  
 FromELF: creating hex file...
-"STM32USB_Demo\STM32USB_Demo.axf" - 0 Error(s), 2 Warning(s).
+"STM32USB_Demo\STM32USB_Demo.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -59,7 +57,7 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.2.0
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

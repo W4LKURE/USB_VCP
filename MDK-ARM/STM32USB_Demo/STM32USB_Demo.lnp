@@ -7,6 +7,7 @@
 "stm32usb_demo\usbd_cdc_if.o"
 "stm32usb_demo\stm32f4xx_it.o"
 "stm32usb_demo\stm32f4xx_hal_msp.o"
+"stm32usb_demo\mem_alloc.o"
 "stm32usb_demo\stm32f4xx_hal_pcd.o"
 "stm32usb_demo\stm32f4xx_hal_pcd_ex.o"
 "stm32usb_demo\stm32f4xx_ll_usb.o"
