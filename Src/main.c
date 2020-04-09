@@ -91,21 +91,21 @@ int main(void)
   MX_GPIO_Init();
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
-   char byte[64];
-   for(int i=0;i<64;i++)
-   {
-		byte[i]=i;
-   }
+  uint8_t byte[64]={0};
+//   for(int i=0;i<64;i++)
+//   {
+//		byte[i]=i;
+//   }
   /* USER CODE END 2 */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
     
-	if(VCP_Read(&byte,64)!=1)
-		continue;
-	VCP_Write(&byte,64);
-	HAL_Delay(1);
+//	if(VCP_Read(&byte,64)!=1)
+//		continue;
+//	VCP_Write(&byte,64);
+	CDC_Transmit_FS(byte,sizeof(byte));
     
   }
 
